@@ -1,5 +1,6 @@
 package br.com.javamysql.service;
 
+import br.com.javamysql.dto.UserDTO;
 import br.com.javamysql.entity.User;
 import br.com.javamysql.repository.UserRepository;
 import lombok.AllArgsConstructor;
@@ -48,5 +49,15 @@ public class UserServiceImpl implements UserService {
     @Override
     public void deleteUser(Long userId) {
         userRepository.deleteById(userId);
+    }
+
+    private UserDTO convertToDTO(User user) {
+        // logic to convert User to UserDTO
+        return null;
+    }
+
+    private User convertToEntity(UserDTO userDTO) {
+        // logic to convert UserDTO to User
+        return null;
     }
 }
