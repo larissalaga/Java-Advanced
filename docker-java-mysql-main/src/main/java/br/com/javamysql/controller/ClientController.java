@@ -30,6 +30,6 @@ public class ClientController implements WebMvcConfigurer {
             return "form";
         }
 
-        return "redirect:/results";
+        s
     }
 }
